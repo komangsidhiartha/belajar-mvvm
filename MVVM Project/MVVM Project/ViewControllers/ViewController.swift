@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            let navigationViewController = UINavigationController()
+            navigationViewController.setViewControllers([MainMenuViewController()], animated: false)
+            self.show(navigationViewController, sender: self)
+        }
     }
-
-
 }
 
