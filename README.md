@@ -14,3 +14,7 @@ This Project was created in attempt to learning about MVVM in iOS using Swift Pr
 - Alamofire-SwiftyJSON: 3.0.0
 - AlamofireImage: 3.5.0
 - SwiftyJSON: 4.0.0
+
+## Version History
+- 1.0 (2), January 28th, 2019: Create project on MVC Pattern first
+- 1.0 (1), January 27th, 2019: Initiate Project, Project Architecture
