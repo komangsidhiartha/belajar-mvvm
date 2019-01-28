@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		315B8AE1CBBB4615EADA077E /* Pods_MVVM_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DE7D18125BBB1FD489D8CB /* Pods_MVVM_ProjectTests.framework */; };
 		A861A46549F3866413B1AB20 /* Pods_MVVM_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848CAA2FADA5FAB2222107A /* Pods_MVVM_ProjectUITests.framework */; };
+		C717B45221FF4FD1000CCF4B /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */; };
+		C717B45321FF4FD1000CCF4B /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */; };
+		C717B45621FF5425000CCF4B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717B45521FF5425000CCF4B /* ApiService.swift */; };
 		C7ABE8D521FDE70300C055FA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8D421FDE70300C055FA /* Product.swift */; };
 		C7ABE8DC21FDE83800C055FA /* HatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8DA21FDE83800C055FA /* HatsViewController.swift */; };
 		C7ABE8DD21FDE83800C055FA /* HatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8DB21FDE83800C055FA /* HatsViewController.xib */; };
@@ -54,6 +57,9 @@
 		90DD9D52A634E9C86F7D9D84 /* Pods_MVVM_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DE7D18125BBB1FD489D8CB /* Pods_MVVM_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34F6175F060510EBC3821BE /* Pods-MVVM ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM ProjectUITests/Pods-MVVM ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		C717B45521FF5425000CCF4B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C7ABE8D421FDE70300C055FA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C7ABE8DA21FDE83800C055FA /* HatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatsViewController.swift; sourceTree = "<group>"; };
 		C7ABE8DB21FDE83800C055FA /* HatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HatsViewController.xib; sourceTree = "<group>"; };
@@ -134,6 +140,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C717B44F21FF4FB0000CCF4B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */,
+				C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C717B45421FF5405000CCF4B /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				C717B45521FF5425000CCF4B /* ApiService.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
 		C7ABE8CF21FDC90C00C055FA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +185,7 @@
 		C7ABE8D221FDE4CC00C055FA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C717B44F21FF4FB0000CCF4B /* Cell */,
 				C7B2BED421FDC632005E96B5 /* ViewController.swift */,
 				C7ABE8DA21FDE83800C055FA /* HatsViewController.swift */,
 				C7ABE8DB21FDE83800C055FA /* HatsViewController.xib */,
@@ -211,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				C7B2BED221FDC632005E96B5 /* AppDelegate.swift */,
+				C717B45421FF5405000CCF4B /* Apis */,
 				C7ABE8D321FDE4E100C055FA /* Models */,
 				C7ABE8CF21FDC90C00C055FA /* Storyboards */,
 				C7ABE8D021FDC93600C055FA /* Supporting Files */,
@@ -353,6 +378,7 @@
 				C7ABE8DD21FDE83800C055FA /* HatsViewController.xib in Resources */,
 				C7ABE8E521FDEC4400C055FA /* ShirtViewController.xib in Resources */,
 				C7ABE8E121FDE8F600C055FA /* MainMenuViewController.xib in Resources */,
+				C717B45321FF4FD1000CCF4B /* ProductTableViewCell.xib in Resources */,
 				C7B2BED821FDC632005E96B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,12 +463,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM Project/Pods-MVVM Project-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,9 +487,11 @@
 			files = (
 				C7ABE8E821FDECB000C055FA /* JeansViewController.swift in Sources */,
 				C7B2BED521FDC632005E96B5 /* ViewController.swift in Sources */,
+				C717B45221FF4FD1000CCF4B /* ProductTableViewCell.swift in Sources */,
 				C7ABE8E021FDE8F600C055FA /* MainMenuViewController.swift in Sources */,
 				C7B2BED321FDC632005E96B5 /* AppDelegate.swift in Sources */,
 				C7ABE8E421FDEC4400C055FA /* ShirtViewController.swift in Sources */,
+				C717B45621FF5425000CCF4B /* ApiService.swift in Sources */,
 				C7ABE8EC21FDEECC00C055FA /* DetailProductViewController.swift in Sources */,
 				C7ABE8DC21FDE83800C055FA /* HatsViewController.swift in Sources */,
 				C7ABE8D521FDE70300C055FA /* Product.swift in Sources */,

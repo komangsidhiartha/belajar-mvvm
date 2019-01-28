@@ -10,7 +10,7 @@ import UIKit
 
 class DetailProductViewController: UIViewController {
 
-    var productName: String? {
+    var product: Product? {
         didSet {
             self.setPageTitle()
         }
@@ -24,21 +24,6 @@ class DetailProductViewController: UIViewController {
     }
 
     private func setPageTitle() {
-        guard let productName = self.productName else {
-            return
-        }
-        
-        self.title = "Detail of " + productName
+        self.title = self.product?.name
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

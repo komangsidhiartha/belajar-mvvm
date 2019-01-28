@@ -18,7 +18,7 @@ class JeansViewController: UIViewController {
     
     @IBAction func onOpenDetail(sender: UIButton) {
         let viewController = DetailProductViewController()
-        viewController.productName = "Jeans"
+//        viewController.product = "Jeans"
         self.show(viewController, sender: self)
     }
 }
