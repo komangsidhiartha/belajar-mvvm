@@ -13,14 +13,10 @@
 		C717B45321FF4FD1000CCF4B /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */; };
 		C717B45621FF5425000CCF4B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717B45521FF5425000CCF4B /* ApiService.swift */; };
 		C7ABE8D521FDE70300C055FA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8D421FDE70300C055FA /* Product.swift */; };
-		C7ABE8DC21FDE83800C055FA /* HatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8DA21FDE83800C055FA /* HatsViewController.swift */; };
-		C7ABE8DD21FDE83800C055FA /* HatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8DB21FDE83800C055FA /* HatsViewController.xib */; };
+		C7ABE8DC21FDE83800C055FA /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8DA21FDE83800C055FA /* ProductListViewController.swift */; };
+		C7ABE8DD21FDE83800C055FA /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8DB21FDE83800C055FA /* ProductListViewController.xib */; };
 		C7ABE8E021FDE8F600C055FA /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8DE21FDE8F600C055FA /* MainMenuViewController.swift */; };
 		C7ABE8E121FDE8F600C055FA /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8DF21FDE8F600C055FA /* MainMenuViewController.xib */; };
-		C7ABE8E421FDEC4400C055FA /* ShirtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8E221FDEC4400C055FA /* ShirtViewController.swift */; };
-		C7ABE8E521FDEC4400C055FA /* ShirtViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8E321FDEC4400C055FA /* ShirtViewController.xib */; };
-		C7ABE8E821FDECB000C055FA /* JeansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8E621FDECB000C055FA /* JeansViewController.swift */; };
-		C7ABE8E921FDECB000C055FA /* JeansViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8E721FDECB000C055FA /* JeansViewController.xib */; };
 		C7ABE8EC21FDEECC00C055FA /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ABE8EA21FDEECC00C055FA /* DetailProductViewController.swift */; };
 		C7ABE8ED21FDEECC00C055FA /* DetailProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7ABE8EB21FDEECC00C055FA /* DetailProductViewController.xib */; };
 		C7B2BED321FDC632005E96B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B2BED221FDC632005E96B5 /* AppDelegate.swift */; };
@@ -61,14 +57,10 @@
 		C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		C717B45521FF5425000CCF4B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C7ABE8D421FDE70300C055FA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		C7ABE8DA21FDE83800C055FA /* HatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatsViewController.swift; sourceTree = "<group>"; };
-		C7ABE8DB21FDE83800C055FA /* HatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HatsViewController.xib; sourceTree = "<group>"; };
+		C7ABE8DA21FDE83800C055FA /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		C7ABE8DB21FDE83800C055FA /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 		C7ABE8DE21FDE8F600C055FA /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		C7ABE8DF21FDE8F600C055FA /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
-		C7ABE8E221FDEC4400C055FA /* ShirtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShirtViewController.swift; sourceTree = "<group>"; };
-		C7ABE8E321FDEC4400C055FA /* ShirtViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShirtViewController.xib; sourceTree = "<group>"; };
-		C7ABE8E621FDECB000C055FA /* JeansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeansViewController.swift; sourceTree = "<group>"; };
-		C7ABE8E721FDECB000C055FA /* JeansViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JeansViewController.xib; sourceTree = "<group>"; };
 		C7ABE8EA21FDEECC00C055FA /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
 		C7ABE8EB21FDEECC00C055FA /* DetailProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailProductViewController.xib; sourceTree = "<group>"; };
 		C7B2BECF21FDC632005E96B5 /* MVVM Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,14 +179,10 @@
 			children = (
 				C717B44F21FF4FB0000CCF4B /* Cell */,
 				C7B2BED421FDC632005E96B5 /* ViewController.swift */,
-				C7ABE8DA21FDE83800C055FA /* HatsViewController.swift */,
-				C7ABE8DB21FDE83800C055FA /* HatsViewController.xib */,
+				C7ABE8DA21FDE83800C055FA /* ProductListViewController.swift */,
+				C7ABE8DB21FDE83800C055FA /* ProductListViewController.xib */,
 				C7ABE8DE21FDE8F600C055FA /* MainMenuViewController.swift */,
 				C7ABE8DF21FDE8F600C055FA /* MainMenuViewController.xib */,
-				C7ABE8E221FDEC4400C055FA /* ShirtViewController.swift */,
-				C7ABE8E321FDEC4400C055FA /* ShirtViewController.xib */,
-				C7ABE8E621FDECB000C055FA /* JeansViewController.swift */,
-				C7ABE8E721FDECB000C055FA /* JeansViewController.xib */,
 				C7ABE8EA21FDEECC00C055FA /* DetailProductViewController.swift */,
 				C7ABE8EB21FDEECC00C055FA /* DetailProductViewController.xib */,
 			);
@@ -373,10 +361,8 @@
 			files = (
 				C7B2BEDD21FDC634005E96B5 /* LaunchScreen.storyboard in Resources */,
 				C7B2BEDA21FDC634005E96B5 /* Assets.xcassets in Resources */,
-				C7ABE8E921FDECB000C055FA /* JeansViewController.xib in Resources */,
 				C7ABE8ED21FDEECC00C055FA /* DetailProductViewController.xib in Resources */,
-				C7ABE8DD21FDE83800C055FA /* HatsViewController.xib in Resources */,
-				C7ABE8E521FDEC4400C055FA /* ShirtViewController.xib in Resources */,
+				C7ABE8DD21FDE83800C055FA /* ProductListViewController.xib in Resources */,
 				C7ABE8E121FDE8F600C055FA /* MainMenuViewController.xib in Resources */,
 				C717B45321FF4FD1000CCF4B /* ProductTableViewCell.xib in Resources */,
 				C7B2BED821FDC632005E96B5 /* Main.storyboard in Resources */,
@@ -485,15 +471,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7ABE8E821FDECB000C055FA /* JeansViewController.swift in Sources */,
 				C7B2BED521FDC632005E96B5 /* ViewController.swift in Sources */,
 				C717B45221FF4FD1000CCF4B /* ProductTableViewCell.swift in Sources */,
 				C7ABE8E021FDE8F600C055FA /* MainMenuViewController.swift in Sources */,
 				C7B2BED321FDC632005E96B5 /* AppDelegate.swift in Sources */,
-				C7ABE8E421FDEC4400C055FA /* ShirtViewController.swift in Sources */,
 				C717B45621FF5425000CCF4B /* ApiService.swift in Sources */,
 				C7ABE8EC21FDEECC00C055FA /* DetailProductViewController.swift in Sources */,
-				C7ABE8DC21FDE83800C055FA /* HatsViewController.swift in Sources */,
+				C7ABE8DC21FDE83800C055FA /* ProductListViewController.swift in Sources */,
 				C7ABE8D521FDE70300C055FA /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

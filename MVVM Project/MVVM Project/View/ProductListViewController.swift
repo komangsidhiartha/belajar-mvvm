@@ -8,50 +8,68 @@
 
 import UIKit
 
-class HatsViewController: UIViewController {
+class ProductListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var hats = [Product]()
+    var partUrl: String? {
+        didSet {
+            self.loadData()
+        }
+    }
+    var apiCalled = false
+    var products = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        tableView.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: "Product")
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView?.register(UINib(nibName: "ProductTableViewCell", bundle: nil), forCellReuseIdentifier: "Product")
+        tableView?.dataSource = self
+        tableView?.delegate = self
         
-        ApiService.shared.get(partUrl: "list/hat") { [weak self] response in
+        self.loadData()
+    }
+}
+
+extension ProductListViewController {
+    func loadData() {
+        if partUrl == nil || apiCalled {
+            return
+        }
+        
+        apiCalled = true
+        
+        ApiService.shared.get(partUrl: partUrl!) { [weak self] response in
             if response?["status"].bool == true {
                 for object in response?["list"].array ?? [] {
                     let hat = Product.fromJson(json: object)
-                    self?.hats.append(hat)
+                    self?.products.append(hat)
                 }
                 
-                self?.tableView.reloadData()
+                self?.tableView?.reloadData()
             }
         }
     }
 }
 
-extension HatsViewController: UITableViewDataSource {
+extension ProductListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return hats.count
+        return products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Product", for: indexPath) as! ProductTableViewCell
         
-        cell.product = hats[indexPath.row]
+        cell.product = products[indexPath.row]
         
         return cell
     }
 }
 
-extension HatsViewController: UITableViewDelegate {
+extension ProductListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = DetailProductViewController()
-        viewController.product = hats[indexPath.row]
+        viewController.product = products[indexPath.row]
         self.show(viewController, sender: self)
     }
 }
