@@ -10,9 +10,14 @@ import UIKit
 
 class DetailProductViewController: UIViewController {
 
+    @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     var product: Product? {
         didSet {
-            self.setPageTitle()
+            self.bindDataToView()
         }
     }
     
@@ -20,10 +25,17 @@ class DetailProductViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        setPageTitle()
+        bindDataToView()
     }
 
-    private func setPageTitle() {
+    private func bindDataToView() {
         self.title = self.product?.name
+        self.brandLabel?.text = self.product?.brand
+        self.priceLabel?.text = self.product?.price
+        self.descriptionLabel?.text = self.product?.description
+        
+        if let urlString = self.product?.imageUrl, let url = URL(string: urlString) {
+            photoImageView?.af_setImage(withURL: url)
+        }
     }
 }

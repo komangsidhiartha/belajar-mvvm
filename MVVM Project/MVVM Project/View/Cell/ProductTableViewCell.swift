@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 
 class ProductTableViewCell: UITableViewCell {
-    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
@@ -41,7 +41,7 @@ extension ProductTableViewCell {
         priceLabel?.text = product?.price
         
         if let urlString = product?.imageUrl, let url = URL(string: urlString) {
-            productImageView.af_setImage(withURL: url)
+            photoImageView.af_setImage(withURL: url)
         }
     }
 }

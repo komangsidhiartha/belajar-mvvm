@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailProductViewController" customModule="MVVM_Project" customModuleProvider="target">
             <connections>
+                <outlet property="brandLabel" destination="Lw6-lP-XI5" id="fUb-mN-KIK"/>
+                <outlet property="descriptionLabel" destination="pOE-CP-X5f" id="nED-lL-QdP"/>
+                <outlet property="photoImageView" destination="QF8-EI-FCl" id="j06-cT-gqG"/>
+                <outlet property="priceLabel" destination="605-uQ-3SU" id="MrC-q3-hTi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,8 +23,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QF8-EI-FCl">
+                    <rect key="frame" x="16" y="28" width="343" height="343"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QF8-EI-FCl" secondAttribute="height" multiplier="1:1" id="rDV-LA-OZd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-lP-XI5">
+                    <rect key="frame" x="16" y="395" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="605-uQ-3SU">
+                    <rect key="frame" x="16" y="423.5" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOE-CP-X5f">
+                    <rect key="frame" x="16" y="457.5" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QF8-EI-FCl" secondAttribute="trailing" constant="16" id="4ve-rd-Dfv"/>
+                <constraint firstItem="pOE-CP-X5f" firstAttribute="top" secondItem="605-uQ-3SU" secondAttribute="bottom" constant="16" id="DMD-aC-gfa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pOE-CP-X5f" secondAttribute="bottom" constant="16" id="OVO-UR-AnR"/>
+                <constraint firstItem="605-uQ-3SU" firstAttribute="trailing" secondItem="Lw6-lP-XI5" secondAttribute="trailing" id="R6h-MK-mjQ"/>
+                <constraint firstItem="Lw6-lP-XI5" firstAttribute="leading" secondItem="QF8-EI-FCl" secondAttribute="leading" id="SUY-5m-3MJ"/>
+                <constraint firstItem="QF8-EI-FCl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Tyu-nQ-1Zt"/>
+                <constraint firstItem="Lw6-lP-XI5" firstAttribute="trailing" secondItem="QF8-EI-FCl" secondAttribute="trailing" id="a7Z-g3-PUm"/>
+                <constraint firstItem="pOE-CP-X5f" firstAttribute="leading" secondItem="605-uQ-3SU" secondAttribute="leading" id="eiH-JG-VJs"/>
+                <constraint firstItem="605-uQ-3SU" firstAttribute="top" secondItem="Lw6-lP-XI5" secondAttribute="bottom" constant="8" id="ioO-VA-SDk"/>
+                <constraint firstItem="605-uQ-3SU" firstAttribute="leading" secondItem="Lw6-lP-XI5" secondAttribute="leading" id="rQN-s0-Fdb"/>
+                <constraint firstItem="pOE-CP-X5f" firstAttribute="trailing" secondItem="605-uQ-3SU" secondAttribute="trailing" id="tab-Ie-jLK"/>
+                <constraint firstItem="Lw6-lP-XI5" firstAttribute="top" secondItem="QF8-EI-FCl" secondAttribute="bottom" constant="24" id="tiB-sY-IZY"/>
+                <constraint firstItem="QF8-EI-FCl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="yuB-KG-gcP"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
         </view>
     </objects>
 </document>
