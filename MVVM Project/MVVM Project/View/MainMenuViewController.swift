@@ -17,14 +17,20 @@ class MainMenuViewController: UIViewController {
     }
     
     @IBAction func onClickHat(button: UIButton) {
-        self.show(HatsViewController(), sender: self)
+        let viewController = ProductListViewController()
+        viewController.partUrl = "list/hat"
+        self.show(viewController, sender: self)
     }
     
     @IBAction func onClickShirt(button: UIButton) {
-        self.show(ShirtViewController(), sender: self)
+        let viewController = ProductListViewController()
+        viewController.partUrl = "list/shirt"
+        self.show(viewController, sender: self)
     }
     
     @IBAction func onClickJeans(button: UIButton) {
-        self.show(JeansViewController(), sender: self)
+        let viewController = ProductListViewController()
+        viewController.partUrl = "list/jeans"
+        self.show(viewController, sender: self)
     }
 }

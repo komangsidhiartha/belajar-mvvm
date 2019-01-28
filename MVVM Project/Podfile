@@ -6,6 +6,8 @@ target 'MVVM Project' do
   use_frameworks!
 
   # Pods for MVVM Project
+  pod 'Alamofire-SwiftyJSON'
+  pod 'AlamofireImage', '~> 3.5'
 
   target 'MVVM ProjectTests' do
     inherit! :search_paths
