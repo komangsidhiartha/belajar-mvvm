@@ -51,25 +51,3 @@ extension ProductListViewController {
         }
     }
 }
-
-extension ProductListViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Product", for: indexPath) as! ProductTableViewCell
-        
-        cell.product = products[indexPath.row]
-        
-        return cell
-    }
-}
-
-extension ProductListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = DetailProductViewController()
-        viewController.product = products[indexPath.row]
-        self.show(viewController, sender: self)
-    }
-}
