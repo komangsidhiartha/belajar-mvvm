@@ -10,13 +10,13 @@ import UIKit
 
 extension ProductListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return viewModel.products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Product", for: indexPath) as! ProductTableViewCell
         
-        cell.product = products[indexPath.row]
+        cell.product = viewModel.products[indexPath.row]
         
         return cell
     }
