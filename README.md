@@ -16,5 +16,11 @@ This Project was created in attempt to learning about MVVM in iOS using Swift Pr
 - SwiftyJSON: 4.0.0
 
 ## Version History
-- 1.0 (2), January 28th, 2019: Create project on MVC Pattern first
-- 1.0 (1), January 27th, 2019: Initiate Project, Project Architecture
+- 1.0.3 (3), January 30th, 2019: 
+    - separate of concern 
+    - MVVM without binding
+- 1.0 (2), January 28th, 2019: 
+    - Create project on MVC Pattern first
+- 1.0 (1), January 27th, 2019: 
+    - Initiate Project
+    - Project Architecture
