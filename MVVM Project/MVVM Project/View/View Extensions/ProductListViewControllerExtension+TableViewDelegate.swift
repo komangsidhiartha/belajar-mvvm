@@ -11,7 +11,7 @@ import UIKit
 extension ProductListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = DetailProductViewController()
-        viewController.product = products[indexPath.row]
+        viewController.product = viewModel.products[indexPath.row]
         self.show(viewController, sender: self)
         tableView.deselectRow(at: indexPath, animated: false)
     }

@@ -18,19 +18,19 @@ class MainMenuViewController: UIViewController {
     
     @IBAction func onClickHat(button: UIButton) {
         let viewController = ProductListViewController()
-        viewController.partUrl = "list/hat"
+        viewController.pageMode = PageMode.hat
         self.show(viewController, sender: self)
     }
     
     @IBAction func onClickShirt(button: UIButton) {
         let viewController = ProductListViewController()
-        viewController.partUrl = "list/shirt"
+        viewController.pageMode = PageMode.shirt
         self.show(viewController, sender: self)
     }
     
     @IBAction func onClickJeans(button: UIButton) {
         let viewController = ProductListViewController()
-        viewController.partUrl = "list/jeans"
+        viewController.pageMode = PageMode.jeans
         self.show(viewController, sender: self)
     }
 }

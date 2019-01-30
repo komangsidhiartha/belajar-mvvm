@@ -11,6 +11,8 @@
 		A861A46549F3866413B1AB20 /* Pods_MVVM_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848CAA2FADA5FAB2222107A /* Pods_MVVM_ProjectUITests.framework */; };
 		C70731A82201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731A72201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift */; };
 		C70731AA2201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731A92201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift */; };
+		C70731AC2201EF5000EA1ED0 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731AB2201EF5000EA1ED0 /* ProductListViewModel.swift */; };
+		C70731AE2201F07500EA1ED0 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731AD2201F07500EA1ED0 /* ProductViewModel.swift */; };
 		C717B45221FF4FD1000CCF4B /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */; };
 		C717B45321FF4FD1000CCF4B /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */; };
 		C717B45621FF5425000CCF4B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717B45521FF5425000CCF4B /* ApiService.swift */; };
@@ -57,6 +59,8 @@
 		C34F6175F060510EBC3821BE /* Pods-MVVM ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM ProjectUITests/Pods-MVVM ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C70731A72201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListViewControllerExtension+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		C70731A92201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListViewControllerExtension+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		C70731AB2201EF5000EA1ED0 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		C70731AD2201F07500EA1ED0 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		C717B45521FF5425000CCF4B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 		C7ABE8D121FDE4AF00C055FA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C70731AB2201EF5000EA1ED0 /* ProductListViewModel.swift */,
+				C70731AD2201F07500EA1ED0 /* ProductViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -485,7 +491,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70731AC2201EF5000EA1ED0 /* ProductListViewModel.swift in Sources */,
 				C7B2BED521FDC632005E96B5 /* ViewController.swift in Sources */,
+				C70731AE2201F07500EA1ED0 /* ProductViewModel.swift in Sources */,
 				C717B45221FF4FD1000CCF4B /* ProductTableViewCell.swift in Sources */,
 				C7ABE8E021FDE8F600C055FA /* MainMenuViewController.swift in Sources */,
 				C70731AA2201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift in Sources */,

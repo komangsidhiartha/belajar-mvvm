@@ -14,7 +14,7 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    var product: Product! {
+    var product: ProductViewModel! {
         didSet {
             self.bindDataToView()
         }
@@ -40,7 +40,7 @@ extension ProductTableViewCell {
         titleLabel?.text = product?.name
         priceLabel?.text = product?.price
         
-        if let urlString = product?.imageUrl, let url = URL(string: urlString) {
+        if let url = product?.imageUrl {
             photoImageView.af_setImage(withURL: url)
         }
     }

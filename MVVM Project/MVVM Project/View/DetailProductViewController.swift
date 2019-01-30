@@ -15,7 +15,7 @@ class DetailProductViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var product: Product? {
+    var product: ProductViewModel? {
         didSet {
             self.bindDataToView()
         }
@@ -34,8 +34,8 @@ class DetailProductViewController: UIViewController {
         self.priceLabel?.text = self.product?.price
         self.descriptionLabel?.text = self.product?.description
         
-        if let urlString = self.product?.imageUrl, let url = URL(string: urlString) {
-            photoImageView?.af_setImage(withURL: url)
+        if let url = self.product?.imageUrl {
+            self.photoImageView?.af_setImage(withURL: url)
         }
     }
 }
