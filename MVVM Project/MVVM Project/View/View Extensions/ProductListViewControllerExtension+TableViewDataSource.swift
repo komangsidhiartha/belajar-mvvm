@@ -1,5 +1,5 @@
 //
-//  ProductListViewController+Extension.swift
+//  ProductListViewControllerExtension+TableViewDataSource.swift
 //  MVVM Project
 //
 //  Created by Sidhi Artha on 30/01/19.

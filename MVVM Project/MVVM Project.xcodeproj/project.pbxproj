@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		315B8AE1CBBB4615EADA077E /* Pods_MVVM_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DE7D18125BBB1FD489D8CB /* Pods_MVVM_ProjectTests.framework */; };
 		A861A46549F3866413B1AB20 /* Pods_MVVM_ProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8848CAA2FADA5FAB2222107A /* Pods_MVVM_ProjectUITests.framework */; };
-		C70731A82201EC1E00EA1ED0 /* ProductListVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731A72201EC1E00EA1ED0 /* ProductListVC-Extension+TableViewDataSource.swift */; };
+		C70731A82201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731A72201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift */; };
 		C70731AA2201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70731A92201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift */; };
 		C717B45221FF4FD1000CCF4B /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */; };
 		C717B45321FF4FD1000CCF4B /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */; };
@@ -55,7 +55,7 @@
 		90DD9D52A634E9C86F7D9D84 /* Pods_MVVM_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DE7D18125BBB1FD489D8CB /* Pods_MVVM_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34F6175F060510EBC3821BE /* Pods-MVVM ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM ProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM ProjectUITests/Pods-MVVM ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C70731A72201EC1E00EA1ED0 /* ProductListVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		C70731A72201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListViewControllerExtension+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		C70731A92201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductListViewControllerExtension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		C717B45021FF4FD1000CCF4B /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		C717B45121FF4FD1000CCF4B /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 		C70731A62201EB6800EA1ED0 /* View Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C70731A72201EC1E00EA1ED0 /* ProductListVC-Extension+TableViewDataSource.swift */,
+				C70731A72201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift */,
 				C70731A92201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift */,
 			);
 			path = "View Extensions";
@@ -490,7 +490,7 @@
 				C7ABE8E021FDE8F600C055FA /* MainMenuViewController.swift in Sources */,
 				C70731AA2201ECB700EA1ED0 /* ProductListViewControllerExtension+TableViewDelegate.swift in Sources */,
 				C7B2BED321FDC632005E96B5 /* AppDelegate.swift in Sources */,
-				C70731A82201EC1E00EA1ED0 /* ProductListVC-Extension+TableViewDataSource.swift in Sources */,
+				C70731A82201EC1E00EA1ED0 /* ProductListViewControllerExtension+TableViewDataSource.swift in Sources */,
 				C717B45621FF5425000CCF4B /* ApiService.swift in Sources */,
 				C7ABE8EC21FDEECC00C055FA /* DetailProductViewController.swift in Sources */,
 				C7ABE8DC21FDE83800C055FA /* ProductListViewController.swift in Sources */,
